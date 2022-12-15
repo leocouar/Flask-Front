@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <form class="form"  methods="POST" >
+        <div class="title">Bienvenido!</div>
+        <div class="subtitle">Let's login!</div>
+        <div class="input-container ic1">
+          <input id="username" class="input" type="text"/>
+          <div class="cut"></div>
+          <label for="username" class="placeholder">Username</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="password" class="input" type="text" />
+          <div class="cut"></div>
+          <label for="password" class="placeholder">Password</label>
+        </div>
+        <button type="submit" class="submit" value="submit" methods="POST">submit</button>
+        <button type="text" class="submit">sign up</button>
+      </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% if g.user %}
+{% else %}
+    <div class="form">
+        <div class="title">Bienvenido!</div>
+        <div class="subtitle">este es el proyecto final espero que les guste!</div>
+        <a href="{{ url_for('user.login') }}"><button type="submit" class="submit">login</button></a>
+        <a href="{{ url_for('user.register') }}"><button type="submit" class="submit">sign up</button></a>
+    </div>
+{% endif %}
+{% endblock %}
